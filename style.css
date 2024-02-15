@@ -1,0 +1,99 @@
+.container {
+  margin-top: 50px;
+  position: relative;
+}
+
+.first-row {
+  height: 30px;
+  width: 2500px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
+  z-index: 5;
+  display: flex;
+  text-align: center;
+}
+
+.second-row {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+}
+
+.second-column {
+  border: 1px solid #ccc;
+  width: 2447px;
+}
+
+.first-column {
+  position: sticky;
+  left: 0;
+  background-color: white;
+}
+
+.col {
+  width: 100px;
+  border: 1px solid #c0c0c0;
+}
+
+.rows {
+  height: 30px; /* Ensure consistent height with finalRow */
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.plate {
+  background-color: gray;
+  z-index: 100;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 56px;
+  height: 30px;
+}
+
+.finalColumn {
+  width: 93px;
+  height: 30px;
+  border: 1px solid #ccc;
+}
+
+.finalRow {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  border: 1px solid #ccc;
+}
+.topbar {
+  background-color: #edf2fa;
+  height: 30px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+input[type="color"] {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  background-color: #d3e2fd;
+}
+label {
+  padding: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Sheet</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <body>
+    <form class="topbar align" id="form">
+      <div>
+        <select name="select">
+          <option value="Default">Default</option>
+        </select>
+        <input type="number" value="16" name="fontsize" />
+      </div>
+
+      <div class="align">
+        <input type="checkbox" id="bold" name="isBold" />
+        <label for="bold" class="material-icons">format_bold</label>
+        <input type="checkbox" id="italic" name="isItalic" />
+        <label for="italic" class="material-icons">format_italic</label>
+        <input type="checkbox" id="strike" name="isStrike" />
+        <label for="strike" class="material-icons">strikethrough_s</label>
+        <input type="radio" id="left" name="align" value="left" />
+        <label class="material-icons" for="left"> format_align_left </label>
+        <input type="radio" id="center" name="align" value="center" />
+        <label class="material-icons" for="center"> format_align_center </label>
+        <input type="radio" id="right" name="align" value="right" />
+        <label class="material-icons" for="right"> format_align_right </label>
+
+        <input type="color" name="textColor" id="color" />
+        <label for="color" class="material-icons">format_color_fill</label>
+      </div>
+    </form>
+    <div class="container">
+      <div class="first-row">
+        <div class="plate"></div>
+      </div>
+      <div class="second-row">
+        <div class="first-column"></div>
+        <div class="second-column"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
